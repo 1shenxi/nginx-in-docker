@@ -7,3 +7,6 @@ RUN sed -i s@/deb.debian.org/@/mirrors.aliyun.com/@g /etc/apt/sources.list \
     && apt-get update \
     && apt-get -y install procps \
     && apt-get -y install vim
+
+# 挪一些静态文件进去
+COPY www /www
